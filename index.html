@@ -228,6 +228,39 @@ body{
 .honor .badge.gov{color:var(--ink);border-color:var(--ink)}
 .honor p{font-size:.9rem;color:#26241f;line-height:1.5}
 
+/* ---------- works ---------- */
+.works{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:clamp(1.6rem,3vw,2.4rem) clamp(1.4rem,2.5vw,2rem);
+}
+.work{margin:0}
+.work-frame{
+  position:relative;width:100%;aspect-ratio:458/258;
+  border:1px solid var(--ink);background:var(--paper-2);overflow:hidden;
+}
+.work-frame img{width:100%;height:100%;object-fit:cover;display:block}
+.work-ph{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:.7rem;text-align:center;padding:1rem;
+  background:
+    repeating-linear-gradient(45deg,transparent 0 14px,rgba(43,39,212,.055) 14px 28px),
+    var(--paper-2);
+}
+.work-ph .n{font-family:var(--serif);font-weight:700;font-size:2.6rem;line-height:1;color:var(--accent)}
+.work-ph .t{font-family:var(--mono);font-size:.7rem;letter-spacing:.22em;color:var(--ink-soft)}
+.work-ph .f{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:var(--accent);
+  border:1px solid var(--accent);padding:.22rem .6rem;border-radius:2px;
+}
+.work-cap{display:flex;align-items:baseline;gap:.85rem;margin-top:1rem}
+.work-no{font-family:var(--mono);font-size:.8rem;color:var(--accent);letter-spacing:.1em;flex:0 0 auto}
+.work-cap h3{font-family:var(--serif);font-weight:600;font-size:1.16rem;letter-spacing:.03em}
+.work-en{
+  display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-soft);margin-top:.28rem;
+}
+.work .tags{margin:.8rem 0 0}
+
 /* ---------- footer ---------- */
 .foot{
   padding:clamp(2.4rem,4vw,3.5rem) 0 clamp(3rem,5vw,4rem);
@@ -439,6 +472,55 @@ body{
       <div class="honor"><span class="badge">校</span><p>杭州师范大学研究生社会实践奖</p></div>
       <div class="honor"><span class="badge">校</span><p>主持杭州师范大学校级专项课题一项</p></div>
       <div class="honor"><span class="badge">校</span><p>参加杭州师范大学校级专项课题四项</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 个人作品 ============ -->
+  <section class="section reveal">
+    <div class="section-head">
+      <span class="section-index">05 / WORKS</span>
+      <h2 class="section-title">个人作品<span class="sub">Works</span></h2>
+    </div>
+    <div class="works">
+
+      <figure class="work">
+        <div class="work-frame">
+          <img src="work1.jpg" alt="61 儿童节主视觉设计" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="work-ph" style="display:none">
+            <span class="n">01</span>
+            <span class="t">作品占位 · 待上传</span>
+            <span class="f">work1.jpg</span>
+          </div>
+        </div>
+        <div class="work-cap">
+          <span class="work-no">W1</span>
+          <div>
+            <h3>61 儿童节 · 节日主视觉</h3>
+            <span class="work-en">Children's Day · Key Visual</span>
+          </div>
+        </div>
+        <div class="tags"><span>主视觉 KV</span><span>节日营销</span><span>插画排版</span></div>
+      </figure>
+
+      <figure class="work">
+        <div class="work-frame">
+          <img src="work2.jpg" alt="动画栏目版式设计" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="work-ph" style="display:none">
+            <span class="n">02</span>
+            <span class="t">作品占位 · 待上传</span>
+            <span class="f">work2.jpg</span>
+          </div>
+        </div>
+        <div class="work-cap">
+          <span class="work-no">W2</span>
+          <div>
+            <h3>动画栏目 · 版式设计</h3>
+            <span class="work-en">AMNGO · Flat Panel Layout</span>
+          </div>
+        </div>
+        <div class="tags"><span>栏目包装</span><span>版式设计</span><span>IP 视觉</span></div>
+      </figure>
+
     </div>
   </section>
 
